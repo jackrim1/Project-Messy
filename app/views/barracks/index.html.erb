@@ -1,0 +1,9 @@
+<% if @barracks.any? %>
+  <% @barracks.each do |barrack| %>
+    <h2> <%= link_to barrack.name, barrack_path(barrack) %> </h2>
+  <% end %>
+<% else %>
+  No messes yet
+<% end %>
+
+<%= link_to "Add a mess", new_barrack_path %>
