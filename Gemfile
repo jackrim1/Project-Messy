@@ -6,6 +6,7 @@ gem 'rails', '4.2.6'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'paperclip'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
