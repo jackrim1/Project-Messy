@@ -38,6 +38,8 @@ feature "User can sign in and out" do
     it "should see an account page" do
       visit('/')
       expect(page).to have_link('My Account')
+      click_link('My Account')
+      expect(page).to have_content('test@example.com')
     end
 
   end
