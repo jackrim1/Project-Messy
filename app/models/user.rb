@@ -1,6 +1,11 @@
 class User < ActiveRecord::Base
 
   has_many :reservations
+
+  belongs_to :barrack
+  accepts_nested_attributes_for :barrack
+
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
