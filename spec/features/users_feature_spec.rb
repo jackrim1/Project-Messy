@@ -39,7 +39,7 @@ feature "User can sign in and out" do
       visit('/')
       expect(page).to have_link('My Account')
       click_link('My Account')
-      expect(page).to have_content('test@example.com')
+      expect(page).to have_content('Edit User')
     end
 
   end
