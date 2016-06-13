@@ -44,3 +44,7 @@ feature "User can sign in and out" do
 
   end
 end
+
+  describe User do
+    it { should belong_to(:Barrack) }
+  end

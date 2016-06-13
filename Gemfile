@@ -42,6 +42,11 @@ group :test do
   gem 'capybara'
 end
 
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
